@@ -22,6 +22,10 @@
   HTML, you can email me at wvanbure@purdue.edu.
 -->
 
+<!-- Notice that if a comment is very long, I cut it off and push it to the next line
+so that the document remains easy to read. Please follow this trend at about the
+same width. -->
+
 <!-- Everything is enclosed in the html tag, and the "lang" attribute tell the browser
 that this is the English version of the webpage -->
 <html lang="en">
@@ -36,6 +40,9 @@ browsing your website. -->
 
   <!-- Tells the browser what kind of character encoding the document uses. Don't worry about this. -->
   <meta charset="utf-8">
+
+  <!-- If the browse is Internet Explorer, this ensures the browser will be able to render our website. -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- A description of the webpage -->
   <meta name="description" content="Water Resource Management at Purdue.">
@@ -95,6 +102,9 @@ page. -->
   or check the stylesheet -->
 
   <div id="main-content" class="container col-lg-8 text-center">
+    <!-- Note that even though in this paragraph I have multiple lines, the browser
+    always ignores that, and uses the minimal amount of spaces and new lines, unless you use
+    a non-breaking space, denoted by &nbsp, or a break tag for a new line, denoted by <br> -->
     <p id="summary">
       The goal of the Water Resource Management EPICS team at Purdue is to optimize water
       use throughout communities. Currently, we have two projects: the <a href="#">Hydroponics
