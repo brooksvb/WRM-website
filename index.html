@@ -59,22 +59,39 @@ browsing your website. -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
   <style>
-    body {background-color:lightblue}
+  body {background-color:lightblue}
 
-    #navbar {
-      border-right: solid #9DACBF;
+  #navbar {
+    border-right: solid #9DACBF;
+  }
+
+    #header {
+      font-family: "Fredoka One", cursive;
     }
 
     #summary {
-      font-size: 1.5em;
+      font-family: "Open Sans", sans-serif;
+    }
 
+    #page-title {
+      margin-top: 0;
     }
   </style>
+
+  <!-- Import statement for google fonts. -->
+  <link href='https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans' rel='stylesheet' type='text/css'>
 </head> <!-- End of header -->
 
 <!-- Everything that makes up the stuff you see in your webpage should be in the
 body. -->
 <body> <!-- Start of body -->
+
+  <!-- In order to make it easier to tell what div a tag belongs to or closes, we mark the
+  opening tag and the closing tag with a label saying what it belongs to. Refer to
+  the closing tags at the bottom of the document to see the format.
+
+  This is especially useful when we have large divs containing a lot of text, and you
+  can't see the opening and closing tags at the same time without scrolling. -->
 
 <!-- div tags are just general dividers. It's nothing special, but they are nice to
 "div- ide" up your content so it's easier to understand what html affects what on your
@@ -82,14 +99,19 @@ page. -->
 <div class="container"> <!-- Main container -->
 
   <!-- This is the header at the top of the page -->
-  <div id="header" class="row">
+  <div class="container" id="header">
     <div class="col-lg-4"><img src="img/Water_Droplet_Logo.png"></div>
-    <div class="col-lg-6 text-center"></br></br><h1>Water Resource Management</h1></div>
+    <div class="col-lg-6 text-center">
+      <br><br><h1>Water Resource Management</h1>
+      <h2 id="page-title">Home</h2>
+    </div>
     <div class="col-lg-2"></div>
   </div>
 
   <div id="navbar" class="container col-lg-2">
     <ul class="nav nav-pills nav-stacked">
+      <!-- The "active" class is used to highlight this pill in the navbar,
+      indicating to the user that it is their current location in the website. -->
       <li role="navigation" class="active"><a href="#">Home</a></li>
       <li role="navigation"><a href="./current_past_projects.html">Current / Past Projects</a></li>
       <li role="navigation"><a href="./team_members.html">Team Members</a></li>
@@ -121,17 +143,15 @@ page. -->
     <br><br>
   </div>
 
+  <!-- This is used to fill the row, according to bootstrap, leaving some blank
+  space on the right of the main content. -->
   <div id="padding" class="container col-lg-2"></div>
 
+  <!-- This div will take up the full width of the page, so it is col-lg-12. -->
   <div id="footer" class="container col-lg-12 well text-center">
     <p>2016 EPICS Water Resource Management, Purdue University</p>
     <img src="img/airproducts_logo.jpg" width="600" height="120">
   </div>
-
-
-
-
-
 
 </div> <!-- End of main container -->
 
