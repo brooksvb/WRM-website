@@ -58,25 +58,13 @@ browsing your website. -->
   <!-- This imports stylesheets for Bootstrap. -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <style>
-  body {background-color:lightblue}
+  <!-- This links our own stylesheet. -->
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
-  #navbar {
-    border-right: solid #9DACBF;
-  }
-
-  #header {
-    font-family: "Fredoka One", cursive;
-  }
-
-  #summary {
-    font-family: "Open Sans", sans-serif;
-  }
-
-  #page-title {
-    margin-top: 0;
-  }
-  </style>
+  <!-- These provide the browser with little icons to put on the tab, called
+  "favicons." -->
+  <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
 
   <!-- Import statement for google fonts. -->
   <link href='https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans' rel='stylesheet' type='text/css'>
@@ -102,7 +90,8 @@ body. -->
     <div class="container" id="header">
       <div class="col-lg-4"><img src="img/Water_Droplet_Logo.png"></div>
       <div class="col-lg-6 text-center">
-        <br><br><h1>Water Resource Management</h1>
+        <br><br>
+        <h1>Water Resource Management</h1>
         <h2 id="page-title">Home</h2>
       </div>
       <div class="col-lg-2"></div>
@@ -112,11 +101,11 @@ body. -->
       <ul class="nav nav-pills nav-stacked">
         <!-- The "active" class is used to highlight this pill in the navbar,
         indicating to the user that it is their current location in the website. -->
-        <li role="navigation" class="active"><a href="#">Home</a></li>
-        <li role="navigation"><a href="./current_past_projects.html">Current / Past Projects</a></li>
-        <li role="navigation"><a href="./team_members.html">Team Members</a></li>
-        <li role="navigation"><a href="./project_partners.html">Project Partners</a></li>
-        <li role="navigation"><a href="./pictures.html">Pictures</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./current_past_projects.html">Current / Past Projects</a></li>
+        <li><a href="./team_members.html">Team Members</a></li>
+        <li><a href="./project_partners.html">Project Partners</a></li>
+        <li><a href="./pictures.html">Pictures</a></li>
       </ul>
     </div>
 

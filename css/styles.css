@@ -1,0 +1,33 @@
+/* This is how you comment in a css file.
+  Please comment anything you add or change. */
+
+/* This will color the background of our entire document, because it applies to
+the body element. */
+body {
+  background-color:lightblue;
+}
+
+/* This adds the line to the right of the navbar. */
+#navbar {
+  border-right: solid #9DACBF;
+}
+
+/* This changes the font in the header. Whenever we use a font that is not built
+into html, we MUST provide an alternative font which will be used in the case the
+preferred font fails to load somehow. This is done by placing a comma, and then the
+name of another font. */
+#header {
+  font-family: "Fredoka One", cursive;
+}
+
+/* Font of the summary paragraph. Again, we have an alternate font as a backup. */
+#summary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+/* This is just formatting to the header; it makes the page title a little closer
+to the "Water Resource Management". */
+#page-title {
+  margin-top: 0;
+}
