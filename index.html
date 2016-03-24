@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- The above line is declaring to the browser that this text is HTML. -->
-<!--
-This HTML document is to be well commented so future Webmasters will be able to
+<!-- This HTML document is to be well commented so future Webmasters will be able to
 understand the document.
 
 First and foremost, HTML is NOT a coding language. It is "Hyper Text Markup Language".
@@ -19,8 +18,7 @@ If you add anything to the website, you must comment it clearly and descriptivel
 so that future Webmasters and understand it and change it if necessary.
 
 If you ever need advice, help, or can't understand something written in the
-HTML, you can email me at wvanbure@purdue.edu.
--->
+HTML, you can email me at wvanbure@purdue.edu. -->
 
 <!-- Notice that if a comment is very long, I cut it off and push it to the next line
 so that the document remains easy to read. Please follow this trend at about the
@@ -74,6 +72,10 @@ browsing your website. -->
 body. -->
 <body> <!-- Start of body -->
 
+  <!-- div tags are just general dividers. It's nothing special, but they are nice to
+  "div- ide" up your content so it's easier to understand what html affects what on your
+  page. -->
+
   <!-- In order to make it easier to tell what div a tag belongs to or closes, we mark the
   opening tag and the closing tag with a label saying what it belongs to. Refer to
   the closing tags at the bottom of the document to see the format.
@@ -81,15 +83,12 @@ body. -->
   This is especially useful when we have large divs containing a lot of text, and you
   can't see the opening and closing tags at the same time without scrolling. -->
 
-  <!-- div tags are just general dividers. It's nothing special, but they are nice to
-  "div- ide" up your content so it's easier to understand what html affects what on your
-  page. -->
   <div class="container"> <!-- Main container -->
 
     <!-- This is the header at the top of the page -->
     <div class="container" id="header">
-      <div class="col-lg-4"><img src="img/Water_Droplet_Logo.png"></div>
-      <div class="col-lg-6 text-center">
+      <div class="col-lg-2"><img src="img/Water_Droplet_Logo.png"></div>
+      <div class="col-lg-8 text-center">
         <br><br>
         <h1>Water Resource Management</h1>
         <h2 id="page-title">Home</h2>
@@ -125,6 +124,7 @@ body. -->
           Project</a> and <a href="#">Happy Hollow Park Project</a>. Both groups are working to provide
           solutions to communities in need.
         </p>
+        <h2><a href="http://www.engineering.purdue.edu/EPICS" target="_blank">More about EPICS</a></h2>
         <br>
 
         <img src="./img/WRM_logo_option3_scaled.png"  style="padding-bottom:50px">
@@ -144,14 +144,12 @@ body. -->
 
     </div> <!-- End of main container -->
 
-    <!--
-    Here is where we import the code that makes Bootstrap work. This is always done at the bottom
+    <!-- Here is where we import the code that makes Bootstrap work. This is always done at the bottom
     of the HTML file in order to make sure the page loads quickly. Otherwise, if the
     browser comes across code, it will wait to download all the code before reading the rest
-    of the HTML file, and users will see a blank webpage until it's done.
-  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    of the HTML file, and users will see a blank webpage until it's done. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-</body> <!-- End of the body -->
-</html> <!-- End of html -->
+  </body> <!-- End of body -->
+  </html> <!-- End of html -->
