@@ -86,7 +86,7 @@ body. -->
   <div class="container"> <!-- Main container -->
 
     <!-- This is the header at the top of the page -->
-    <div class="container" id="header">
+    <div class="container" id="header"> <!-- header -->
       <div class="col-lg-2"><img src="img/Water_Droplet_Logo.png"></div>
       <div class="col-lg-8 text-center">
         <br><br>
@@ -94,9 +94,10 @@ body. -->
         <h2 id="page-title">Home</h2>
       </div>
       <div class="col-lg-2"></div>
-    </div>
+    </div> <!-- End of header -->
 
-    <div id="navbar" class="container col-lg-2">
+    <!-- This contains the navigation elements on the left side of the page. -->
+    <div id="navbar" class="container col-lg-2"> <!-- navbar -->
       <ul class="nav nav-pills nav-stacked">
         <!-- The "active" class is used to highlight this pill in the navbar,
         indicating to the user that it is their current location in the website. -->
@@ -106,7 +107,7 @@ body. -->
         <li><a href="./project_partners.html">Project Partners</a></li>
         <li><a href="./pictures.html">Pictures</a></li>
       </ul>
-    </div>
+    </div> <!-- End of navbar -->
 
     <!-- Not sure where something is getting a styling from? Inspect the element in Chrome
     or check the stylesheet -->
@@ -115,41 +116,45 @@ body. -->
 
       <!-- Note that even though in this paragraph I have multiple lines, the browser
       always ignores that, and uses the minimal amount of spaces and new lines, unless you use
-      a non-breaking space, denoted by &nbsp; , or a break tag for a new line, denoted by <br>.
-      You can also use <pre></pre> tags, which tells the browser that the text is pre-formatted,
+      a non-breaking space, denoted by "&nbsp;" , or a break tag for a new line, denoted by "<br>".
+      You can also use <pre>content with    as many
+      spaces or lines as you
+      want.</pre> tags, which tells the browser that the text is pre-formatted,
       and the browser should not change it by removing excess spaces and such. -->
       <p id="summary">
         The goal of the Water Resource Management EPICS team at Purdue is to optimize water
-        use throughout communities. Currently, we have two projects: the <a href="#">Hydroponics
-          Project</a> and <a href="#">Happy Hollow Park Project</a>. Both groups are working to provide
-          solutions to communities in need.
-        </p>
-        <h2><a href="http://www.engineering.purdue.edu/EPICS" target="_blank">More about EPICS</a></h2>
-        <br>
+        use throughout communities. Currently, we have two projects: the
+        <a href="#">Hydroponics Project</a>
+        and
+        <a href="#">Happy Hollow Park Project</a>.
+        Both groups are working to provide solutions to communities in need.
+      </p>
+      <h2><a href="http://www.engineering.purdue.edu/EPICS" target="_blank">More about EPICS</a></h2>
+      <br>
 
-        <img src="./img/WRM_logo_option3_scaled.png"  style="padding-bottom:50px">
+      <img src="./img/WRM_logo_option3_scaled.png"  style="padding-bottom:50px">
 
-        <br><br>
-      </div> <!-- End of main content -->
+      <br><br>
+    </div> <!-- End of main content -->
 
-      <!-- This is used to fill the row, according to bootstrap, leaving some blank
-      space on the right of the main content. -->
-      <div id="padding" class="container col-lg-2"></div>
+    <!-- This is used to fill the row, according to bootstrap, leaving some blank
+    space on the right of the main content. -->
+    <div id="padding" class="container col-lg-2"></div>
 
-      <!-- This div will take up the full width of the page, so it is col-lg-12. -->
-      <div id="footer" class="container col-lg-12 well text-center">
-        <p>2016 EPICS Water Resource Management, Purdue University</p>
-        <img src="img/airproducts_logo.jpg" width="600" height="120">
-      </div>
+    <!-- This div will take up the full width of the page, so it is col-lg-12. -->
+    <div id="footer" class="container col-lg-12 well text-center">
+      <p>2016 EPICS Water Resource Management, Purdue University</p>
+      <img src="img/airproducts_logo.jpg" width="600" height="120">
+    </div>
 
-    </div> <!-- End of main container -->
+  </div> <!-- End of main container -->
 
-    <!-- Here is where we import the code that makes Bootstrap work. This is always done at the bottom
-    of the HTML file in order to make sure the page loads quickly. Otherwise, if the
-    browser comes across code, it will wait to download all the code before reading the rest
-    of the HTML file, and users will see a blank webpage until it's done. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Here is where we import the code that makes Bootstrap work. This is always done at the bottom
+  of the HTML file in order to make sure the page loads quickly. Otherwise, if the
+  browser comes across code, it will wait to download all the code before reading the rest
+  of the HTML file, and users will see a blank webpage until it's done. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  </body> <!-- End of body -->
-  </html> <!-- End of html -->
+</body> <!-- End of body -->
+</html> <!-- End of html -->
