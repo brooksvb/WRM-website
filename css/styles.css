@@ -1,15 +1,26 @@
 /* This is how you comment in a css file.
-  Please comment anything you add or change. */
+Please comment anything you add or change. */
+
+/* When using css, you have a "selector", which tells the browser what kinds of
+elements to apply styles to. Inside the brackets, you have a "attribute", and a
+respective "value" for each attribute. A attribute may have multiple values,
+separated by spaces, but it must always end with a semicolon.
+
+ex. <attribute-name>: value1 value2;
+
+The colon separates the attribute from its values. */
+
 
 /* This will color the background of our entire document, because it applies to
 the body element. */
 body {
-  background-color:lightblue;
+  background-color: lightblue;
 }
 
 /* This adds the line to the right of the navbar. */
 #navbar {
   border-right: solid #9DACBF;
+  font-size: 1.3em;
 }
 
 /* This changes the font in the header. Whenever we use a font that is not built
@@ -24,6 +35,9 @@ name of another font. */
 #summary {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
+  /* em is a measurement that says "make the font x times bigger than the browsers
+  default size." This helps the webpage scale nicely if the user is on a small screen
+  like a phone. */
 }
 
 /* This is just formatting to the header; it makes the page title a little closer
