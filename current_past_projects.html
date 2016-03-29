@@ -1,26 +1,7 @@
 <!DOCTYPE html>
 <!-- The above line is declaring to the browser that this text is HTML. -->
-<!--
-  This HTML document is to be well commented so future Webmasters will be able to
-  understand the document.
 
-  First and foremost, HTML is NOT a coding language. It is "Hyper Text Markup Language".
-  All this means is HTML tells the browser how to display text and other things
-  on your screen. JavaScript IS a coding language, that can be used alongside HTML;
-  however, there should be no need for that on this website.
-
-  This website was rebuilt by Brooks Van Buren in Spring 2016. It is built using
-  Bootstrap (getbootstrap.com). Bootstrap is just a library of styles and JavaScript
-  (don't worry, you don't have to do any coding) that makes building nice looking
-  websites super quick and easy. I recommend you read the reference document I
-  created before messing with the HTML.
-
-  If you add anything to the website, you must comment it clearly and descriptively
-  so that future Webmasters and understand it and change it if necessary.
-
-  If you ever need advice, help, or can't understand something written in the
-  HTML, you can email me at wvanbure@purdue.edu.
--->
+<!-- Please comment all changes well for future webmasters. -->
 
 <!-- Everything is enclosed in the html tag, and the "lang" attribute tell the browser
 that this is the English version of the webpage -->
@@ -32,10 +13,13 @@ browsing your website. -->
 <head> <!-- Beginning of header -->
 
   <!-- This is the title that is displayed on the little tab at the top of the browser. -->
-  <title>WRM - Projects</title>
+  <title>WRM - TITLE OF PAGE</title>
 
   <!-- Tells the browser what kind of character encoding the document uses. Don't worry about this. -->
   <meta charset="utf-8">
+
+  <!-- If the browse is Internet Explorer, this ensures the browser will be able to render our website. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- A description of the webpage -->
   <meta name="description" content="Water Resource Management at Purdue.">
@@ -45,97 +29,106 @@ browsing your website. -->
   project,service,learning,engineering">
 
   <!-- This gets info about the browser window so that Bootstrap can scale its
-    items accordingly. -->
+  items accordingly. -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- This imports stylesheets for Bootstrap. -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <style>
-    body {background-color:lightblue}
+  <!-- This links our own stylesheet. -->
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
-    #navbar {
-      border-right: solid #9DACBF;
-    }
+  <!-- These provide the browser with little icons to put on the tab, called
+  "favicons." -->
+  <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
 
-    #summary {
-      font-size: 1.5em;
-
-    }
-  </style>
+  <!-- Import statement for google fonts. -->
+  <link href='https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans' rel='stylesheet' type='text/css'>
 </head> <!-- End of header -->
 
 <!-- Everything that makes up the stuff you see in your webpage should be in the
 body. -->
 <body> <!-- Start of body -->
 
-<!-- div tags are just general dividers. It's nothing special, but they are nice to
-"div- ide" up your content so it's easier to understand what html affects what on your
-page. -->
-<div class="container"> <!-- Main container -->
+  <!-- div tags are just general dividers. It's nothing special, but they are nice to
+  "div- ide" up your content so it's easier to understand what html affects what on your
+  page. -->
 
-  <!-- This is the header at the top of the page -->
-  <div id="header" class="row">
-    <div class="col-lg-4"><img src="img/Water_Droplet_Logo.png"></div>
-    <div class="col-lg-6 text-center"></br></br><h1>Water Resource Management</h1></div>
-    <div class="col-lg-2"></div>
-  </div>
+  <!-- In order to make it easier to tell what div a tag belongs to or closes, we mark the
+  opening tag and the closing tag with a label saying what it belongs to. Refer to
+  the closing tags at the bottom of the document to see the format.
 
-  <div id="navbar" class="container col-lg-2">
-    <ul class="nav nav-pills nav-stacked">
-      <li role="navigation"><a href="./index.html">Home</a></li>
-      <li role="navigation" class="active"><a href="#">Current / Past Projects</a></li>
-      <li role="navigation" style="padding-left:20px;">
-        <ul class="nav nav-pills nav-stacked">
-          <li role="navigation"><a href="#">Hydroponics</a></li>
-          <li role="navigation"><a href="#">Happy Hollow Park</a></li>
-          <li role="navigation"><a href="#">Hydraulic Ram Pump</a></li>
-          <li role="navigation"><a href="#">ADM Building Runoff Plan</a></li>
-          <li role="navigation"><a href="#">Green Roof Design</a></li>
-          <li role="navigation"><a href="#">Rain Barrel and Rain Garden</a></li>
-          <li role="navigation"><a href="#">Colombia Water Treatment Project</a></li>
-        </ul>
-      </li>
-      <li role="navigation"><a href="./team_members.html">Team Members</a></li>
-      <li role="navigation"><a href="./project_partners.html">Project Partners</a></li>
-      <li role="navigation"><a href="./pictures.html">Pictures</a></li>
-    </ul>
-  </div>
+  This is especially useful when we have large divs containing a lot of text, and you
+  can't see the opening and closing tags at the same time without scrolling. -->
 
-  <!-- Not sure where something is getting a styling from? Inspect the element in Chrome
-  or check the stylesheet -->
+  <div class="container"> <!-- Main container -->
 
-  <div id="main-content" class="container col-lg-8 text-center">
-    <div class="project-summary container">
-      <div class="summary-title">
-    </div>
+    <!-- This is the header at the top of the page -->
+    <div class="container" id="header"> <!-- header -->
+      <div class="col-lg-2"><img src="img/Water_Droplet_Logo.png"></div>
+      <div class="col-lg-8 text-center">
+        <br><br>
+        <h1>Water Resource Management</h1>
+        <h2 id="page-title">TITLE OF PAGE</h2>
+      </div>
+      <div class="col-lg-2"></div>
+    </div> <!-- End of header -->
 
+    <!-- This contains the navigation elements on the left side of the page. -->
+    <div id="navbar" class="container col-lg-2"> <!-- navbar -->
+      <ul class="nav nav-pills nav-stacked">
+        <!-- The "active" class is used to highlight this pill in the navbar,
+        indicating to the user that it is their current location in the website. -->
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./current_past_projects.html">Current / Past Projects</a></li>
+        <!-- This next item contains a second navbar, with padding on the left.
+        This is to get the effect of having the "tabbed" in pills for each project
+        page. -->
+        <li role="navigation" style="padding-left:20px;">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="navigation"><a href="#">Hydroponics</a></li>
+            <li role="navigation"><a href="#">Happy Hollow Park</a></li>
+            <li role="navigation"><a href="#">Hydraulic Ram Pump</a></li>
+            <li role="navigation"><a href="#">ADM Building Runoff Plan</a></li>
+            <li role="navigation"><a href="#">Green Roof Design</a></li>
+            <li role="navigation"><a href="#">Rain Barrel and Rain Garden</a></li>
+            <li role="navigation"><a href="#">Colombia Water Treatment Project</a></li>
+          </ul>
+        </li>
+        <li><a href="./team_members.html">Team Members</a></li>
+        <li><a href="./project_partners.html">Project Partners</a></li>
+        <li><a href="./pictures.html">Pictures</a></li>
+      </ul>
+    </div> <!-- End of navbar -->
 
+    <!-- Not sure where something is getting a styling from? Inspect the element in Chrome
+    or check the stylesheet -->
 
-  </div>
+    <!-- Most, if not all of the page-specific content should be in here. The rest of the page should
+    remain consistent across most pages. -->
+    <div id="main-content" class="container col-lg-8 text-center"> <!-- Main content -->
 
-  <div id="padding" class="container col-lg-2"></div>
+    </div> <!-- End of main content -->
 
-  <div id="footer" class="container col-lg-12 well text-center">
-    <p>2016 EPICS Water Resource Management, Purdue University</p>
-    <img src="img/airproducts_logo.jpg" width="600" height="120">
-  </div>
+    <!-- This is used to fill the row, according to bootstrap, leaving some blank
+    space on the right of the main content. -->
+    <div id="padding" class="container col-lg-2"></div>
 
+    <!-- This div will take up the full width of the page, so it is col-lg-12. -->
+    <div id="footer" class="container col-lg-12 well text-center"> <!-- Footer -->
+      <p>2016 EPICS Water Resource Management, Purdue University</p>
+      <img src="img/airproducts_logo.jpg" width="600" height="120">
+    </div> <!-- End of footer -->
 
+  </div> <!-- End of main container -->
 
-
-
-
-</div> <!-- End of main container -->
-
-<!--
-  Here is where we import the code that makes Bootstrap work. This is always done at the bottom
-  of the body in order to make sure the page loads quickly. Otherwise, if the
+  <!-- Here is where we import the code that makes Bootstrap work. This is always done at the bottom
+  of the HTML file in order to make sure the page loads quickly. Otherwise, if the
   browser comes across code, it will wait to download all the code before reading the rest
-  of the HTML file, and users will see a blank webpage until it's done.
--->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  of the HTML file, and users will see a blank webpage until it's done. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-</body> <!-- End of the body -->
+</body> <!-- End of body -->
 </html> <!-- End of html -->
