@@ -46,6 +46,10 @@ to the "Water Resource Management". */
   margin-top: 0;
 }
 
+#main-content {
+  font-family: "Open Sans", sans-serif;
+}
+
 .profile {
   /* vw is a measurement that is equal to 1% of the user's screen width. */
   margin-left: 2vw;
@@ -70,4 +74,10 @@ to the "Water Resource Management". */
   padding-top: 10px;
   font-size: 1.2em;
   font-style: "Open Sans", sans-serif;
+}
+
+.project-title {
+  font-size: 2em;
+  margin-top: 0px;
+  font-weight: 500;
 }

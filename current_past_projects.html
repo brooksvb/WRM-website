@@ -13,7 +13,7 @@ browsing your website. -->
 <head> <!-- Beginning of header -->
 
   <!-- This is the title that is displayed on the little tab at the top of the browser. -->
-  <title>WRM - TITLE OF PAGE</title>
+  <title>WRM - Projects</title>
 
   <!-- Tells the browser what kind of character encoding the document uses. Don't worry about this. -->
   <meta charset="utf-8">
@@ -65,35 +65,35 @@ body. -->
   <div class="container"> <!-- Main container -->
 
     <!-- This is the header at the top of the page -->
-    <div class="container" id="header"> <!-- header -->
+    <div class="row" id="header"> <!-- header -->
       <div class="col-lg-2"><img src="img/Water_Droplet_Logo.png"></div>
       <div class="col-lg-8 text-center">
         <br><br>
         <h1>Water Resource Management</h1>
-        <h2 id="page-title">TITLE OF PAGE</h2>
+        <h2 id="page-title">Current and Past Projects</h2>
       </div>
       <div class="col-lg-2"></div>
     </div> <!-- End of header -->
 
     <!-- This contains the navigation elements on the left side of the page. -->
-    <div id="navbar" class="container col-lg-2"> <!-- navbar -->
+    <div id="navbar" class="col-lg-2"> <!-- navbar -->
       <ul class="nav nav-pills nav-stacked">
         <!-- The "active" class is used to highlight this pill in the navbar,
         indicating to the user that it is their current location in the website. -->
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="./current_past_projects.html">Current / Past Projects</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li class="active"><a href="./current_past_projects.html">Current / Past Projects</a></li>
         <!-- This next item contains a second navbar, with padding on the left.
         This is to get the effect of having the "tabbed" in pills for each project
         page. -->
         <li role="navigation" style="padding-left:20px;">
           <ul class="nav nav-pills nav-stacked">
-            <li role="navigation"><a href="#">Hydroponics</a></li>
-            <li role="navigation"><a href="#">Happy Hollow Park</a></li>
-            <li role="navigation"><a href="#">Hydraulic Ram Pump</a></li>
-            <li role="navigation"><a href="#">ADM Building Runoff Plan</a></li>
-            <li role="navigation"><a href="#">Green Roof Design</a></li>
-            <li role="navigation"><a href="#">Rain Barrel and Rain Garden</a></li>
-            <li role="navigation"><a href="#">Colombia Water Treatment Project</a></li>
+            <li role="navigation"><a href="#happy_hollow">Happy Hollow Park</a></li>
+            <li role="navigation"><a href="#hydroponics">Hydroponics</a></li>
+            <li role="navigation"><a href="#hydraulic_ram">Hydraulic Ram Pump</a></li>
+            <li role="navigation"><a href="#adm_building">ADM Building Runoff Plan</a></li>
+            <li role="navigation"><a href="#green_roof">Green Roof Design</a></li>
+            <li role="navigation"><a href="#rain_barrel">Rain Barrel and Rain Garden</a></li>
+            <li role="navigation"><a href="#colombia">Colombia Water Treatment Project</a></li>
           </ul>
         </li>
         <li><a href="./team_members.html">Team Members</a></li>
@@ -107,18 +107,231 @@ body. -->
 
     <!-- Most, if not all of the page-specific content should be in here. The rest of the page should
     remain consistent across most pages. -->
-    <div id="main-content" class="container col-lg-8 text-center"> <!-- Main content -->
+    <div id="main-content" class="col-lg-8"> <!-- Main content -->
+
+      <!-- This is a template for a project listing on this page.
+      <div class="project panel panel-default">
+        <p class="panel-heading text-center project-title">Happy Hollow</p>
+        <div class="panel-body">
+          <p><strong>Started:</strong> Date</p>
+          <p><strong>Current Term:</strong> Date</p>
+          <br>
+          <p><strong>Description:</strong><br>
+            Happy Hollow Park is maintained by the City of West Lafayette. Currently,
+            the park is experiencing erosion in multiple areas surrounding the trail and
+            stream bed. The overall goal of the Happy Hollow EPICS team is to stop erosion
+            within the park thus reducing the amount of sediment sent to the Wabash River.
+            Currently we are looking at ways to prevent hill slopes erosion.
+          </p>
+          <p><strong>Current Project Members:</strong> Andrew Huang, Lana Huston, Monica Moran</p>
+          <p><strong>Past Project Members:</strong> Andrew Huang, Callus Wayman, Scott Quillen, Pablo Schwiep, Loshini Vickneshwaran</p>
+          <p><strong>Project Mentor:</strong> Dr. Engel</p>
+        </div>
+      </div> -->
+
+      <div id="happy_hollow" class="project panel panel-default">
+        <p class="panel-heading text-center project-title">Happy Hollow</p>
+        <div class="panel-body">
+          <p><strong>Started:</strong> Fall 2013</p>
+          <p><strong>Current Term:</strong> Spring 2016</p>
+          <br>
+          <p><strong>Description:</strong><br>
+            Happy Hollow Park is maintained by the City of West Lafayette. Currently,
+            the park is experiencing erosion in multiple areas surrounding the trail and
+            stream bed. The overall goal of the Happy Hollow EPICS team is to stop erosion
+            within the park thus reducing the amount of sediment sent to the Wabash River.
+            Currently we are looking at ways to prevent hill slopes erosion.
+          </p>
+          <p><strong>Current Project Members:</strong> Andrew Huang, Lana Huston, Monica Moran</p>
+          <p><strong>Past Project Members:</strong> Andrew Huang, Callus Wayman, Scott Quillen, Pablo Schwiep, Loshini Vickneshwaran</p>
+          <p><strong>Project Mentor:</strong> Dr. Engel</p>
+        </div>
+      </div>
+
+      <!-- hr stands for horizontal rule, and it puts in a horizontal line. Nice for
+      dividing stuff. -->
+      <hr>
+
+      <div id="hydroponics" class="project panel panel-default">
+        <p class="panel-heading text-center project-title">Hydroponics</p>
+        <div class="panel-body">
+          <p><strong>Started:</strong> Fall 2013</p>
+          <p><strong>Current Term:</strong> Spring 2016</p>
+          <br>
+          <p><strong>Description:</strong><br>
+            Hydroponics works with Lafayette Habitat for Humanity. The goal of
+            this project is to build a hydroponic system for Habitat's newest site,
+            Bean Bag. Bean Bag seeks to be a community center that also show cases
+            various gardening and plant cultivation methods. This hydroponic system
+            will be one of those methods used to educate the local community.
+          </p>
+          <p><strong>Current Project Members:</strong> Douglas Milani, Chad Lawrence, Daniel Seach, Steven Bjankini, Brooks Van Buren</p>
+          <p><strong>Past Project Members:</strong> Douglas Milani, Jingfei Deng, Chad Lawrence, Arman Shroff, Sophie Weidenbenner</p>
+          <p><strong>Project Mentor:</strong> Dr. Engel</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="hydraulic_ram" class="project panel panel-default">
+        <p class="panel-heading text-center project-title">Hydraulic Ram Pump</p>
+        <div class="panel-body">
+          <p><strong>Started:</strong> Spring 2010</p>
+          <p><strong>Current Term:</strong> Postponed</p>
+          <br>
+          <p><strong>Description:</strong><br>
+            In many developing countries, access to water is a major problem. People
+            often have to walk great distances to reach a clean water sources. These
+            communities need an affordable solution that will alleviate this problem.
+            A hydraulic ram pump is a water pump that can pump water to higher elevations
+            or long distances without using electricity; compressed air and water hammer
+            power the pump. Currently we are in the detail design phase. This semester we
+            hope to create the most efficient pump and find a project partner who will need
+            this pump. Hopefully by the end of spring 2014 we will deliver the project.
+            Innovative and affordable solutions like hydraulic ram pumps are effective
+            solutions to the global water crisis.
+          </p>
+          <p><strong>Current Project Members:</strong> N/A</p>
+          <p><strong>Past Project Members:</strong> Ayomide Lamuren, Jerry Chen, Terry Tsai, Andreas Watts, Ariel Humphrey,
+            Sam Balskas, Evan Gliniecki, Zack Capo, Brian Bertini, Cody Pae, Kristy Martini, Rinat Mukhamadiyev,
+            Birenda Kujur, Nicholas DeNardo, Brian Deak, Brooke Poppe, Leah Garner, Chiehen Wu,
+            Chun Ta Huang, Vincent Marquet
+          </p>
+          <p><strong>Project Mentor:</strong> Dr. Engel</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div id="adm_building" class="project panel panel-default">
+        <p class="panel-heading text-center project-title">ADM Building RunOff Plan</p>
+        <div class="panel-body">
+          <p><strong>Started:</strong> Fall 2011</p>
+          <p><strong>Project Completion:</strong> Spring 2012</p>
+          <br>
+          <p><strong>Description:</strong><br>
+            Our project is to design a runoff management system for the new 27,000
+            square foot ADM (Archer Daniels Midland) building and surrounding areas.
+            Also included in this land area is an area where several coal fly ash trucks
+            are washed daily and there is a coal fly ash retention area on-site. The
+            different facets of this project include researching and prototyping a coal
+            fly ash retention system that is cost-effective and practical. Another aspect
+            is the trench system which diverts the surface runoff from the building area
+            to a subsurface wetland system across the road. We will also investigate and
+            design options for a pervious pavement demonstration area in the parking lot
+            on the South end of the building. The final aspect of this project is the design
+            of the subsurface wetland system for managing runoff for a large storm event
+            scenario. This will be the senior design project focus of the team. The
+            objective of this project is to provide an outdoor laboratory along with a
+            practical and innovative solution to excess runoff. We will propose monitoring
+            and encourage demonstration of sustainable technologies to ensure that the
+            educational aspect is intertwined with the practical design of the storm water
+            runoff system.
+          </p>
+          <p><strong>Project Members:</strong> Stephen Kelly, April Wang, Wilson Batdorf,
+            McKenna Maier, Chistopher Tito, Neil Cooper, Minju Lee, Morgan Thome,
+            Avinash Ravi Raghavan
+          </p>
+          <p><strong>Project Mentor:</strong> Dr. Engel</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="green_roof" class="project panel panel-default">
+        <p class="panel-heading text-center project-title">Green Roof Design</p>
+        <div class="panel-body">
+          <p><strong>Started:</strong> Spring 2010</p>
+          <p><strong>Project Completion:</strong> Fall 2010</p>
+          <br>
+          <p><strong>Description:</strong><br>
+            The goal of this project is to create and implement a design for a green
+            roof that can be installed on multiple buildings.
+          </p>
+          <p><strong>Project Members:</strong> Erica Merrifield, Katelyn Kulczyk,
+            Robbie Otten, Allie Rader
+          </p>
+          <p><strong>Project Mentor:</strong> Dr. Engel</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="rain_barrel" class="project panel panel-default">
+        <p class="panel-heading text-center project-title">Rain Barrel and Rain Garden</p>
+        <div class="panel-body">
+          <p><strong>Started:</strong> Fall 2010</p>
+          <p><strong>Project Completion:</strong> Spring 2011</p>
+          <br>
+          <p><strong>Description:</strong><br>
+            The Greater Lafayette community needs to mitigate non-point-source pollution
+            generated from combined sewer overflow (CSO) during rain events. The Wabash
+            River and other water bodies are polluted with CSO water containing large
+            nutrient loads from sources such as lawn fertilizers and pet waste.
+            This pollution creates hypoxic conditions not only in our local bodies,
+            but also downstream in areas such as the Gulf of Mexico. Our objective is
+            to educate residents about Low Impact Development (LID) Best Management
+            Practices (BMPs) and to provide rain barrels to those residents that have
+            been identified as living in a “critical subwatershed” in Greater Lafayette.
+            Rain barrels will be offered to qualifying residents in these areas.
+            <br><br>
+            Rain barrels attach to gutters and reduce storm water runoff by collecting
+            water from the roofs of homes; rain barrels also provide opportunities for
+            water reuse—the barrel contains a spigot and the water can be used to water
+            gardens, to wash cars, and for other various tasks around the home. Students
+            in this WRM project will conduct surveys and workshops in the community
+            about rain barrels, and assist with the installation of the rain barrels,
+            which will be provided at a reduced cost to encourage participation.
+          </p>
+          <p><strong>Project Members:</strong> Stephen Lindorfer, Moises Cervantes, Hani Kim,
+            Yoojung Lee, Xun Zhou
+          </p>
+          <p><strong>Project Mentor:</strong> Dr. Engel</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="colombia" class="project panel panel-default">
+        <p class="panel-heading text-center project-title">Colombia Water Treatment Project</p>
+        <div class="panel-body">
+          <p><strong>Started:</strong> Fall 2010</p>
+          <p><strong>Project Completion:</strong> Spring 2012</p>
+          <br>
+          <p><strong>Description:</strong><br>
+            Access to sufficient amounts of clean drinking water is a serious problem
+            in the rural area near Barbosa, Colombia. The Kimberly-Clark Company, a
+            paper products manufacturer, established a plant in Barbosa in 2008 and
+            now wishes to promote public health in the area by ensuring a reliable
+            drinking water supply in nearby rural areas. Because groundwater resources
+            are severely limited in the area, treatment of available surface water is
+            the only viable means of producing safe, potable water.The Colombia WRM
+            team is working to establish a series of workshops with rural communities
+            on building their own ice roughly 180 people, andslow sand water filters
+            first designed and implemented by a GET in March 2011. Furthermore the
+            team is working on a community-sized scale up design to serv a continuous
+            effort to enhance and expand the original sand filter design.
+            <br><br>
+            You can check out the Colombia Project's blog <a href="https://colombiascaleup.wordpress.com/" target="_blank">here.</a>
+          </p>
+          <p><strong>Project Members:</strong> Fernando Segovia, Manaz Taleyarkhan,
+            Amber Scheid, Jason Kaczkowski, Nicolas GuerraMondragon, Roderick Lammers,
+            Ashley Stahly
+          </p>
+          <p><strong>Project Mentor:</strong> Dr. Engel</p>
+        </div>
+      </div>
 
     </div> <!-- End of main content -->
 
     <!-- This is used to fill the row, according to bootstrap, leaving some blank
     space on the right of the main content. -->
-    <div id="padding" class="container col-lg-2"></div>
+    <div id="padding" class="col-lg-2"></div>
 
     <!-- This div will take up the full width of the page, so it is col-lg-12. -->
-    <div id="footer" class="container col-lg-12 well text-center"> <!-- Footer -->
+    <div id="footer" class="col-lg-12 well text-center"> <!-- Footer -->
       <p>2016 EPICS Water Resource Management, Purdue University</p>
-      <img src="img/airproducts_logo.jpg" width="600" height="120">
+      <img class="img-responsive center-block" src="img/airproducts_logo.jpg" width="600" height="120">
     </div> <!-- End of footer -->
 
   </div> <!-- End of main container -->
