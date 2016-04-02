@@ -54,23 +54,28 @@ to the "Water Resource Management". */
   /* vw is a measurement that is equal to 1% of the user's screen width. */
   margin-left: 2vw;
   margin-right: 2vw;
-  height: 20vw;
   font-style: "Open Sans", sans-serif;
 }
 
-.profile-name {
-  padding-top: 0px;
+/* Selection in this way can be understood as "apply this to every h3 element
+inside an element with the class profile." */
+.profile h3 {
   padding-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* vh is a measurement equal to 1% of the user's screen height. */
+  padding-top: .5vh;
+  padding-bottom: .5vh;
   font-style: "Open Sans", sans-serif;
 }
 
-.profile-pic {
+.profile img {
   padding-top: 10px;
   padding-bottom: 2px;
-  height: 13vw;
+
 }
 
-.profile-text {
+.profile p {
   padding-top: 10px;
   font-size: 1.2em;
   font-style: "Open Sans", sans-serif;
