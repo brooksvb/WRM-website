@@ -40,6 +40,10 @@ name of another font. */
   like a phone. */
 }
 
+#splash-logo {
+  padding-bottom: 50px;
+}
+
 /* This is just formatting to the header; it makes the page title a little closer
 to the "Water Resource Management". */
 #page-title {
