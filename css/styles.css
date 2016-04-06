@@ -41,6 +41,7 @@ name of another font. */
 }
 
 #splash-logo {
+  /* This puts some extra space between the bottom of the picture and the footer. */
   padding-bottom: 50px;
 }
 
@@ -52,6 +53,12 @@ to the "Water Resource Management". */
 
 #main-content {
   font-family: "Open Sans", sans-serif;
+}
+
+/* This is applied to all img elements in the element with id="images". */
+#images img {
+  /* This adds a little space in between each picture. */
+  margin-bottom: 40px;
 }
 
 .profile {
