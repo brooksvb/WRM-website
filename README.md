@@ -12,3 +12,5 @@ To achieve this, I rebuilt the website from scratch, but maintained the basic la
 
 # PLEASE NOTE:
 If you look at the website now, it might not be in the same state that I left it when I left the WRM team. If you want to make sure you see the work I have done, please check out the files specifically in this repo.
+
+Included is a folder containing the old website for comparison. You can see all the changes I made, while still keeping the same theme intact.
