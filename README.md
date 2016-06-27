@@ -1,5 +1,5 @@
-# Not-Shitty-Website
-Rebuilt website for Purdue EPICS team WRM
+# WRM-website
+Rebuilt website for Purdue Engineering Projects in Community Service team Water Resource Management
 
 This is a repo of the rebuilt website for the Water Resource Management team of Engineering Projects in Community Service at Purdue.
 
